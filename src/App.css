@@ -1,0 +1,183 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%; /* Ensure the body spans the full width */
+  font-family: Arial, sans-serif;
+  background-color: #FEFAE0; /* Light Beige */
+  color: #283618; /* Dark Olive */
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Prevent any horizontal scrolling */
+}
+
+/* Ensure App takes full height */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%; /* Ensure the root spans the full width */
+}
+
+/* Navbar styling */
+nav {
+  background-color: #606C38;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensure navbar spans full width */
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Allow the ul to take up the full width */
+  justify-content: center; /* Center navbar items */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem; /* Font size for nav bar */
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav ul li a:hover {
+  background: #BC6C25; /* Dark Golden Brown */
+  color: white;
+}
+
+/* Ensure Content spans full width */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%; /* Ensure content container spans the full width */
+}
+
+/* Centered Content */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%; /* Ensure the main section spans the full width */
+}
+
+/* Floating Island - Adjust to be same across pages */
+.island {
+  background: white;
+  padding: 30px;
+  padding-bottom: 50px !important; /* Increased bottom padding with !important */
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 90%;
+  text-align: center; /* Keep title centered */
+  margin-bottom: 100px; /* Add space at the bottom so it doesn't touch the footer */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Footer - Pinned at Bottom */
+footer {
+  background-color: #DDA15E;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Styling for Paragraphs */
+.paragraph_font {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px; /* Adjusted for consistency */
+  font-weight: normal;
+  line-height: 1.6;
+  color: #606C38; /* Olive Green */
+  margin-bottom: 15px; /* Add space between paragraphs */
+}
+
+/* Styling for List Items */
+.text-content ul {
+  list-style-type: disc; /* Default bullet points */
+  padding-left: 20px; /* Space between bullet and text */
+  margin-left: 0; /* Align list to the left */
+}
+
+.text-content li {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px; /* Matching font size */
+  line-height: 1.6;
+  color: #606C38; /* Olive Green */
+  margin-bottom: 10px; /* Space between bullet points */
+}
+
+/* Ensure bullets are properly spaced and aligned */
+.text-content {
+  text-align: left; /* Ensure text and bullets align to the left */
+  padding-left: 20px; /* Add extra padding to left for proper alignment */
+}
+
+/* Ensure Despre Noi Page Content is not covered by Footer */
+.despre-noi-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to top to avoid overlap with footer */
+  padding: 20px;
+  min-height: calc(100vh - 60px); /* Account for footer height */
+}
+
+/* Footer Adjustment for Content */
+footer {
+  z-index: 1; /* Ensure footer is on top but does not overlap the content */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .island {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
