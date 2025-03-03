@@ -5,49 +5,49 @@ function GalerieFoto() {
     const galleryImages = [
         {
             id: 1,
-            src: "/assets/gallery/school-building.jpg",
+            src: "/assets/gallery/nicolas.jpg",
             alt: "Clădirea școlii",
             category: "Școală"
         },
         {
             id: 2,
-            src: "/assets/gallery/classroom.jpg",
+            src: "/assets/gallery/nicolas.jpg",
             alt: "Sala de clasă modernă",
             category: "Facilități"
         },
         {
             id: 3,
-            src: "/assets/gallery/science-lab.jpg",
+            src: "/assets/gallery/nicolas.jpg",
             alt: "Laboratorul de științe",
             category: "Facilități"
         },
         {
             id: 4,
-            src: "/assets/gallery/library.jpg",
+            src: "/assets/gallery/nicolas.jpg",
             alt: "Biblioteca școlii",
             category: "Facilități"
         },
         {
             id: 5,
-            src: "/assets/gallery/sports-event.jpg",
+            src: "/assets/gallery/nicolas.jpg",
             alt: "Competiție sportivă",
             category: "Evenimente"
         },
         {
             id: 6,
-            src: "/assets/gallery/graduation.jpg",
+            src: "/assets/gallery/nicolas.jpg",
             alt: "Ceremonia de absolvire",
             category: "Evenimente"
         },
         {
             id: 7,
-            src: "/assets/gallery/art-project.jpg",
+            src: "/assets/gallery/nicolas.jpg",
             alt: "Proiect de artă",
             category: "Activități"
         },
         {
             id: 8,
-            src: "/assets/gallery/music-performance.jpg",
+            src: "/assets/gallery/nicolas.jpg",
             alt: "Spectacol muzical",
             category: "Activități"
         }

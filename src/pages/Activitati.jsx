@@ -6,22 +6,22 @@ function Activitati() {
         {
             title: "Activități sportive",
             description: "Organizăm diverse competiții sportive și încurajăm participarea elevilor la activități care promovează un stil de viață sănătos.",
-            image: "/assets/sports.jpg"
+            image: "/assets/gallery/nicolas.jpg"
         },
         {
             title: "Ateliere de artă",
             description: "Elevii noștri participă la ateliere de artă și meșteșuguri tradiționale, dezvoltându-și creativitatea și abilitățile artistice.",
-            image: "/assets/art.jpg"
+            image: "/assets/gallery/nicolas.jpg"
         },
         {
             title: "Muzică și dans",
             description: "Grupul nostru coral și ansamblul de dansuri tradiționale reprezintă școala la diverse evenimente culturale locale și naționale.",
-            image: "/assets/music.jpg"
+            image: "/assets/gallery/nicolas.jpg"
         },
         {
             title: "Clubul de știință",
             description: "Experimentele științifice și proiectele inovatoare sunt încurajate în cadrul clubului nostru de știință, unde elevii își pot dezvolta abilitățile de cercetare.",
-            image: "/assets/science.jpg"
+            image: "/assets/gallery/nicolas.jpg"
         }
     ];
 
@@ -44,7 +44,7 @@ function Activitati() {
                             boxShadow: '0 2px 5px rgba(0,0,0,0.05)',
                             border: '1px solid #DDA15E'
                         }}>
-                            <h2 style={{ color: '#606C38', marginBottom: '15px', fontSize: '1.3rem' }}>{activity.title}</h2>
+                            <h2 style={{ color: '#606C38', marginBottom: '15px', fontSize: '1.3rem', textAlign: 'center'}}>{activity.title}</h2>
                             <div style={{ display: 'flex', flexDirection: window.innerWidth > 768 ? 'row' : 'column', gap: '20px' }}>
                                 <div style={{ flex: 1 }}>
                                     <img
@@ -58,7 +58,14 @@ function Activitati() {
                                         }}
                                     />
                                 </div>
-                                <div style={{ flex: 2 }}>
+                                <div style={{
+                                    flex: 2,
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    textAlign: 'center'
+                                }}>
                                     <p className="paragraph_font">{activity.description}</p>
                                 </div>
                             </div>
